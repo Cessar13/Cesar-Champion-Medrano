@@ -6,60 +6,91 @@
     <title>César Paul André Champion Medrano</title>
 
     <style>
-        body {
-            margin: 0;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #0f172a, #2563eb, #06b6d4);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            color:white;
+            line-height:1.8;
         }
 
-        .contenedor {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            padding: 40px;
-            border-radius: 20px;
-            text-align: center;
-            color: white;
-            max-width: 800px;
-            box-shadow: 0 0 30px rgba(0,0,0,0.3);
+        .hero{
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:40px;
         }
 
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+        .hero h1{
+            font-size:4rem;
+            margin-bottom:15px;
+            text-shadow:2px 2px 10px rgba(0,0,0,0.4);
         }
 
-        .subtitulo {
-            font-size: 1.6rem;
-            color: #fde047;
-            margin-bottom: 25px;
-            font-weight: bold;
+        .subtitulo{
+            font-size:1.8rem;
+            color:#fde047;
+            margin-bottom:30px;
         }
 
-        .descripcion {
-            font-size: 1.3rem;
-            line-height: 1.8;
+        .descripcion{
+            max-width:800px;
+            font-size:1.3rem;
         }
 
-        a {
-            color: #facc15;
-            font-weight: bold;
-            text-decoration: none;
+        a{
+            color:#facc15;
+            text-decoration:none;
+            font-weight:bold;
         }
 
-        a:hover {
-            color: white;
-            text-decoration: underline;
+        a:hover{
+            text-decoration:underline;
+        }
+
+        section{
+            max-width:900px;
+            margin:80px auto;
+            padding:40px;
+            background:rgba(255,255,255,0.12);
+            backdrop-filter:blur(10px);
+            border-radius:20px;
+            box-shadow:0 0 20px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            color:#fde047;
+            margin-bottom:20px;
+            font-size:2rem;
+        }
+
+        p, li{
+            font-size:1.15rem;
+        }
+
+        ul{
+            list-style:none;
+        }
+
+        footer{
+            text-align:center;
+            padding:40px;
+            font-size:0.95rem;
+            opacity:0.8;
         }
     </style>
 </head>
 <body>
 
-    <div class="contenedor">
+    <div class="hero">
         <h1>César Paul André Champion Medrano</h1>
 
         <div class="subtitulo">
@@ -67,42 +98,49 @@
         </div>
 
         <div class="descripcion">
-            Actualmente estudio la carrera de <strong>Ciencias de la Computación</strong>
-            en la
+            Actualmente estudio la carrera de Ciencias de la Computación en la
             <a href="https://ucsp.edu.pe" target="_blank">
                 Universidad Católica San Pablo
             </a>.
         </div>
     </div>
 
+    <section>
+        <h2>Sobre mí</h2>
+        <p>
+            Soy estudiante de Ciencias de la Computación con interés en la
+            programación, el desarrollo de software y el aprendizaje continuo
+            de nuevas tecnologías. Busco fortalecer mis habilidades técnicas y
+            adquirir conocimientos que me permitan contribuir al desarrollo de
+            soluciones innovadoras en el ámbito de la informática.
+        </p>
+    </section>
+
+    <section>
+        <h2>Intereses</h2>
+        <p>
+            Programación, desarrollo de software, algoritmos,
+            estructuras de datos, inteligencia artificial,
+            desarrollo web, bases de datos, ciberseguridad,
+            computación y resolución de problemas mediante tecnología.
+        </p>
+    </section>
+
+    <section>
+        <h2>Cursos Actuales</h2>
+        <ul>
+            <li>Lógica</li>
+            <li>Introducción a la Vida Universitaria</li>
+            <li>Comunicación</li>
+            <li>Fundamentos Matemáticos para Computación</li>
+            <li>Fundamentos de Programación</li>
+            <li>Introducción a la Computación</li>
+        </ul>
+    </section>
+
+    <footer>
+        © 2026 César Paul André Champion Medrano
+    </footer>
+
 </body>
 </html>
-<section style="margin-top: 40px;">
-    <h2 style="color: #fde047;">Sobre mí</h2>
-    <p>
-        Soy estudiante de Ciencias de la Computación interesado en el aprendizaje
-        de la programación, el desarrollo de software y las tecnologías que
-        impulsan la innovación en el ámbito de la informática.
-    </p>
-</section>
-<section style="margin-top: 40px;">
-    <h2 style="color: #fde047;">Intereses</h2>
-    <p>
-        Programación, desarrollo de software, algoritmos,
-        estructuras de datos, inteligencia artificial,
-        desarrollo web, bases de datos, ciberseguridad
-        y resolución de problemas computacionales.
-    </p>
-</section>
-
-<section style="margin-top: 40px;">
-    <h2 style="color: #fde047;">Cursos Actuales</h2>
-    <ul style="list-style-type: none; padding: 0; line-height: 2;">
-        <li>Lógica</li>
-        <li>Introducción a la Vida Universitaria</li>
-        <li>Comunicación</li>
-        <li>Fundamentos Matemáticos para Computación</li>
-        <li>Fundamentos de Programación</li>
-        <li>Introducción a la Computación</li>
-    </ul>
-</section>
